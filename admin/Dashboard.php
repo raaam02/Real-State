@@ -39,6 +39,25 @@ if (!isset($_SESSION["authenticated"])) {
     />
     <!-- Style.css -->
     <link rel="stylesheet" href="../style.css" />
+    <style>
+      .alert {
+        position: fixed;
+        top: 25px;
+        left: 35%;
+        z-index: 1;
+        animation: alert-pop 0.3s linear;
+      }
+
+      @keyframes alert-pop {
+        0% {
+          transform: scale(0.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+    </style>
   </head>
 
   <body>
@@ -136,9 +155,11 @@ if (!isset($_SESSION["authenticated"])) {
         class="mt-5 pt-5 d-flex justify-content-center flex-column"
       >
       <div
-        class="container d-flex justify-content-center w-100"
+        class="container d-flex justify-content-end"
       >
         
+      
+      
       <?php
 $alerts = [
     'user_removed' => ['Deleted', 'User Removed Successfully.', 'alert-success'],
@@ -150,7 +171,7 @@ $alerts = [
 foreach ($alerts as $sessionKey => list($strong, $message, $alertClass)) {
     if (isset($_SESSION[$sessionKey])) {
         echo '
-        <div class="alert ' . $alertClass . ' alert-dismissible fade show mb-0 rounded-0" role="alert w-100">
+        <div class="alert ' . $alertClass . ' alert-dismissible fade show m-5 rounded-4 w-25" role="alert w-75">
         <strong>' . htmlspecialchars($strong) . '</strong> ' . htmlspecialchars($message) . '
         <button type="button" class="btn-close shadow-none" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>';
@@ -158,9 +179,11 @@ foreach ($alerts as $sessionKey => list($strong, $message, $alertClass)) {
     }
 }
 ?>
-
-    
-    
+</div>
+      <div
+        class="container d-flex justify-content-center w-100"
+      >
+   
 <?php
 include("../php/conn.php");
 
