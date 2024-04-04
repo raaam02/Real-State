@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
           if (password_verify($pass, $storedHashedPassword)) {
               session_start();
               $_SESSION['authenticated'] = true;
-              header("location: Dashboard.php");
+              header("location: ../admin/Dashboard.php");
               exit();
           } else {
               $InvalidPassword = true;
