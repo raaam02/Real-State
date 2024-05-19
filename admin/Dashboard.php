@@ -180,9 +180,6 @@ foreach ($alerts as $sessionKey => list($strong, $message, $alertClass)) {
 }
 ?>
 </div>
-      <div
-        class="container d-flex justify-content-center w-100"
-      >
    
 <?php
 include("../php/conn.php");
@@ -207,7 +204,6 @@ if (mysqli_num_rows($result)>0) {
                 <th class='text-center'>NAME</th>
                 <th class='text-center'>EMAIL</th>
                 <th class='text-center'>USERNAME</th>
-                <th class='text-center'>PASSWORD</th>
                 <th class='text-center'>REGISTRATION DATE</th>
                 <th class='text-center'>ACTION</th>
             </tr>
@@ -222,7 +218,6 @@ if (mysqli_num_rows($result)>0) {
     <td class='text-center'>{$row['name']}</td>
     <td class='text-center'>{$row['email']}</td>
     <td class='text-center'>{$row['username']}</td>
-    <td class='text-center'>{$row['password']}</td>
     <td class='text-center'>{$row['regtime']}</td>
     <td class='text-center'>
       <div class='d-flex justify-content-center'>
@@ -253,7 +248,7 @@ else {
 mysqli_close($conn);
 
 ?>
-    </div>  
+  
     </main>
     <footer>
       <!-- place footer here -->
