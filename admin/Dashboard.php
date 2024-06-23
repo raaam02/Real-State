@@ -69,17 +69,15 @@ if (!isset($_SESSION["authenticated"])) {
             <a class="navbar-brand p- 0 m-0 text-white" href="#"
               >
               <img
-                src="../images/AdminDP.png"
+                src="../images/userDP.png"
                 class="img-fluid rounded-5"
                 alt=""
               />
           </a>
           </div>
           <div>
-            <?php 
-            
-            ?>
-          <a class="text-decoration-none text-white ms-2 h5" href="#"><?php echo $_SESSION['admin']; ?></a>
+            <!-- <?//php echo $_SESSION['admin']; ?> -->
+          <a class="text-decoration-none text-white ms-2 h5" href="#">Ram</a>
         </div>
           <button
             class="navbar-toggler shadow-none border-0"

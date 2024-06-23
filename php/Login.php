@@ -100,11 +100,11 @@ mysqli_close($conn);
           class="shadow container p-5 mt-5 rounded-5"
           style="max-width: 500px; background-color: #d0efffc7"
         >
-          <h3 class="text-center mb-5">Welcome to Vivana Developer</h3>
+          <h3 class="text-center mb-5 text-dark">Welcome to Vivana Developer</h3>
           <!-- Form -->
           <form action="" method="post">
             <div class="mb-3">
-              <label for="" class="form-label">User Name</label>
+              <label for="" class="form-label text-dark">User Name</label>
               <input
                 type="text"
                 class="form-control shadow-none"
@@ -116,7 +116,7 @@ mysqli_close($conn);
               />
             </div>
             <div class="mb-3">
-              <label for="" class="form-label">Password</label>
+              <label for="" class="form-label text-dark">Password</label>
               <input
                 type="password"
                 class="form-control shadow-none"

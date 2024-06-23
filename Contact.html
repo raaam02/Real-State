@@ -105,14 +105,18 @@
     <main>
       <!-- Contact Form -->
       <section class="py-5" style="background-color: #bae9ff68">
-        <div class="container pt-5">
+        <div
+          class="container pt-5 d-flex justify-content-center align-items-center flex-column"
+        >
           <h2 class="h1-responsive font-weight-bold text-center my-4">
             <strong>Contact us</strong>
           </h2>
-          <p class="text-center w-responsive mx-auto mb-5 h5">
-            Do you have any questions? Please do not hesitate to contact us
-            directly. Our team will come back to you within a matter of hours.
-          </p>
+          <div class="my-4 col-lg-6 col-md-12 col-sm-12">
+            <p class="text-center w-responsive mx-auto mb-5 h5">
+              Do you have any questions? Please do not hesitate to contact us
+              directly. Our team will come back to you within a matter of hours.
+            </p>
+          </div>
         </div>
         <div
           class="shadow container p-5 rounded-5 mx-auto m-1"
@@ -121,7 +125,7 @@
           <!-- form -->
           <form action="php/Contact.php" method="post">
             <div class="mb-3">
-              <label for="" class="form-label">Name</label>
+              <label for="" class="form-label text-dark">Name</label>
               <input
                 type="text"
                 class="form-control shadow-none"
@@ -133,7 +137,7 @@
               />
             </div>
             <div class="mb-3">
-              <label for="" class="form-label">Email</label>
+              <label for="" class="form-label text-dark">Email</label>
               <input
                 type="email"
                 class="form-control shadow-none"
@@ -145,7 +149,7 @@
               />
             </div>
             <div class="mb-3">
-              <label for="" class="form-label">Query</label>
+              <label for="" class="form-label text-dark">Query</label>
               <textarea
                 class="form-control shadow-none"
                 name="query"
