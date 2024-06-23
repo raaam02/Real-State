@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
-            if ($row['admin'] == $admin) {
+            if ($row['admin'] == $aname) {
                 $showError = true; 
             }
             if ($row['email'] == $email) {

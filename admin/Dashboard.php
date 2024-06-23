@@ -39,6 +39,25 @@ if (!isset($_SESSION["authenticated"])) {
     />
     <!-- Style.css -->
     <link rel="stylesheet" href="../style.css" />
+    <style>
+      .alert {
+        position: fixed;
+        top: 25px;
+        left: 35%;
+        z-index: 1;
+        animation: alert-pop 0.3s linear;
+      }
+
+      @keyframes alert-pop {
+        0% {
+          transform: scale(0.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+    </style>
   </head>
 
   <body>
@@ -50,17 +69,15 @@ if (!isset($_SESSION["authenticated"])) {
             <a class="navbar-brand p- 0 m-0 text-white" href="#"
               >
               <img
-                src="../images/AdminDP.png"
+                src="../images/userDP.png"
                 class="img-fluid rounded-5"
                 alt=""
               />
           </a>
           </div>
           <div>
-            <?php 
-            
-            ?>
-          <a class="text-decoration-none text-white ms-2 h5" href="#"><?php echo $_SESSION['admin']; ?></a>
+            <!-- <?//php echo $_SESSION['admin']; ?> -->
+          <a class="text-decoration-none text-white ms-2 h5" href="#">Ram</a>
         </div>
           <button
             class="navbar-toggler shadow-none border-0"
@@ -136,9 +153,11 @@ if (!isset($_SESSION["authenticated"])) {
         class="mt-5 pt-5 d-flex justify-content-center flex-column"
       >
       <div
-        class="container d-flex justify-content-center w-100"
+        class="container d-flex justify-content-end"
       >
         
+      
+      
       <?php
 $alerts = [
     'user_removed' => ['Deleted', 'User Removed Successfully.', 'alert-success'],
@@ -150,7 +169,7 @@ $alerts = [
 foreach ($alerts as $sessionKey => list($strong, $message, $alertClass)) {
     if (isset($_SESSION[$sessionKey])) {
         echo '
-        <div class="alert ' . $alertClass . ' alert-dismissible fade show mb-0 rounded-0" role="alert w-100">
+        <div class="alert ' . $alertClass . ' alert-dismissible fade show m-5 rounded-4 w-25" role="alert w-75">
         <strong>' . htmlspecialchars($strong) . '</strong> ' . htmlspecialchars($message) . '
         <button type="button" class="btn-close shadow-none" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>';
@@ -158,9 +177,8 @@ foreach ($alerts as $sessionKey => list($strong, $message, $alertClass)) {
     }
 }
 ?>
-
-    
-    
+</div>
+   
 <?php
 include("../php/conn.php");
 
@@ -184,7 +202,6 @@ if (mysqli_num_rows($result)>0) {
                 <th class='text-center'>NAME</th>
                 <th class='text-center'>EMAIL</th>
                 <th class='text-center'>USERNAME</th>
-                <th class='text-center'>PASSWORD</th>
                 <th class='text-center'>REGISTRATION DATE</th>
                 <th class='text-center'>ACTION</th>
             </tr>
@@ -199,7 +216,6 @@ if (mysqli_num_rows($result)>0) {
     <td class='text-center'>{$row['name']}</td>
     <td class='text-center'>{$row['email']}</td>
     <td class='text-center'>{$row['username']}</td>
-    <td class='text-center'>{$row['password']}</td>
     <td class='text-center'>{$row['regtime']}</td>
     <td class='text-center'>
       <div class='d-flex justify-content-center'>
@@ -230,7 +246,7 @@ else {
 mysqli_close($conn);
 
 ?>
-    </div>  
+  
     </main>
     <footer>
       <!-- place footer here -->

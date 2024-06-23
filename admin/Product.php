@@ -60,7 +60,7 @@ if (!isset($_SESSION["authenticated"])) {
             <?php 
             
             ?>
-          <a class="text-decoration-none text-white ms-2 h5" href="#"><?php echo $_SESSION['admin']; ?></a>
+          <a class="text-decoration-none text-white ms-2 h5" href="#">Ram</a>
         </div>
           <button
             class="navbar-toggler shadow-none border-0"
