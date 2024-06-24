@@ -36,7 +36,7 @@
   <body>
     <header>
       <!-- place navbar here -->
-      <nav class="load-animation navbar navbar-expand-md fixed-top">
+      <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid px-4">
           <a class="navbar-brand text-white" href="index.html">Logo</a>
           <button
@@ -63,7 +63,7 @@
               </h5>
               <button
                 type="button"
-                class="btn-close btn-close-white text-reset shadow-none border-0 text-white"
+                class="btn-close btn-close-white text-reset shadow-none border-0"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
@@ -71,15 +71,14 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a
-                    class="nav-link activeted"
-                    aria-current="page"
-                    href="index.html"
+                  <a class="nav-link" aria-current="page" href="index.html"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="projects.php">Projects</a>
+                  <a class="nav-link activeted" href="Projects.html"
+                    >Projects</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="Contact.html">Contact</a>
@@ -108,42 +107,6 @@
       </nav>
     </header>
     <main>
-      <!-- Finest Development -->
-      <section>
-        <div
-          class="load-animation position-relative overflow-hidden p-lg-5 p-md-5 m-md-5 p-sm-2 pt-5"
-        >
-          <div class="col-md-6 py-5 mx-auto my-5 mb-0">
-            <h1 class="display-3 fw-bold">
-              <p class="text-center mb-0">Welcome to</p>
-              <p class="text-center vivana-dev">Vivana Developer</p>
-            </h1>
-            <h3 class="fw-normal text-center h5">
-              Crafting the world's Finest Developments
-            </h3>
-          </div>
-          <!-- <p class="h5">
-                With a rich legacy of trust spanning four decades, at
-                <strong>Vindhya Developers</strong>, we are driven by our
-                passion to exceed global standards and deliver iconic addresses.
-                We go to extraordinary lengths, from carefully restoring
-                heritage buildings to sourcing the best minds in architecture
-                and design. Our iconic developments offer unmatched amenities,
-                state-of-the-art infrastructure and unparalleled services that
-                perfectly orchestrate a celebration of life’s finest moments.
-              </p> -->
-          <div class="mb-5 d-flex align-items-center justify-content-center">
-            <a
-              name=""
-              id=""
-              class="btn rounded-5 mt-4 text-white px-5 d-flex align-items-center justify-content-center"
-              href="Aboutus.html"
-              role="button"
-              >KNOW MORE</a
-            >
-          </div>
-        </div>
-      </section>
       <!-- Carousel -->
       <section id="Carousel">
         <div
@@ -176,7 +139,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/hotel-desktop-new-e1576663207298.jpg"
+                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/Desktop-banner_2.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -189,7 +152,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/Desktop-banner_2.jpg"
+                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/1366x626.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -202,7 +165,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/1366x626.jpg"
+                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/hotel-desktop-new-e1576663207298.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -234,23 +197,13 @@
           </button>
         </div>
       </section>
-      <!-- About Us -->
-      <section class="aboutUs">
-        <div
-          class="position-relative overflow-hidden py-3 p-lg-5 pt-lg-3 pt-3 p-md-5 m-md-3"
-        >
-          <div class="col-md-6 mx-auto my-5 mb-0 pb-2">
-            <h1 class="display-4 fw-bold">
-              <p class="text-center mb-0">About Us</p>
-              <h1 class="display-1 text-center" style="color: #00ab22">
-                Vivana Developer
-              </h1>
-            </h1>
-            <h3 class="fw-normal mt-3 mb-3 text-center">
-              Crafting the World's Finest Developments
-            </h3>
-          </div>
-          <div class="d-flex p-1 px-lg-5 mx-lg-5 mx-auto text-center">
+      <!-- Finest Development -->
+      <section class="work-intro pt-5">
+        <div class="p-0 p-lg-5">
+          <h1 class="p-lg-5 py-5 ms-0 text-center">
+            <strong>Crafting the World's Finest Developments</strong>
+          </h1>
+          <div class="d-flex p-1 px-lg-5 mx-lg-5">
             <div class="px-lg-5">
               <p class="h5">
                 With a rich legacy of trust spanning four decades, at
@@ -262,14 +215,110 @@
                 state-of-the-art infrastructure and unparalleled services that
                 perfectly orchestrate a celebration of life’s finest moments.
               </p>
+              <div
+                class="mt-5 d-flex align-items-center justify-content-center"
+              >
+                <a
+                  name=""
+                  id=""
+                  class="btn rounded-5 text-white px-4 d-flex align-items-center justify-content-center"
+                  href="Login.html"
+                  role="button"
+                  >Know More</a
+                >
+              </div>
             </div>
           </div>
-          <div
-            class="product-device product-device-2 shadow-sm d-none d-md-block"
-          ></div>
         </div>
       </section>
-      <!-- Prjects -->
+
+      <!-- Projects -->
+
+       <section class="projects my-5">
+
+       <div class="col-md-6 mx-auto my-5">
+            <h1 class="display-4 fw-bold">
+              <h1 class="display-3 text-center" style="color: #00ab22">
+                Our Projects
+              </h1>
+            </h1>
+          </div>
+
+      <?php
+      include("php/conn.php");
+
+
+      $sql = "SELECT * FROM `products`";
+
+      $result = mysqli_query($conn, $sql );
+
+      if (mysqli_num_rows($result)>0) {
+        
+        echo "<div class='container'>
+        <div class='row'>
+      ";
+      
+                  while ($row = mysqli_fetch_assoc($result)) {
+                      $modalId = "modal" . $row['id']; // Unique modal ID
+                      $imageUrl = "admin/projects/{$row['image']}"; // Image URL
+                      echo "
+                      <div class='col-md-3 g-3'>
+                          <div class='projects-img-box card mb-4 box-shadow'>
+                              <button
+                                  type='button'
+                                  class='btn p-0 border-0'
+                                  data-bs-toggle='modal'
+                                  data-bs-target='#$modalId'
+                                  data-bs-image='$imageUrl'
+                              >
+                                  <img style='height: 200px; object-fit: cover;' 
+                                      class='card-img-top project-img' 
+                                      src='$imageUrl'>
+                              </button>
+                              <div class='card-body'>
+                                  <h3>{$row['name']}</h3>
+                                  <p class='card-text'>{$row['location']}</p>
+                              </div>
+                          </div>
+                      </div>
+                  
+                      <!-- Modal -->
+                      <div class='modal fade' id='$modalId' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+                          <div class='modal-dialog'>
+                              <div class='modal-content'>
+                                  <div class='modal-header'>
+                                      <h3 class='modal-title text-dark' id='exampleModalLabel'>{$row['name']}</h3>
+                                      <button type='button btn-dark' class='btn-close shadow-none' data-bs-dismiss='modal' aria-label='Close'></button>
+                                  </div>
+                                  <div class='modal-body'>
+                                      <img class='rounded' src='$imageUrl' alt='Image' style='width: 100%; height: 400px;' id='modal-img-$row[id]'>
+                                  </div>
+                                  <div class='modal-footer'>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      ";
+                  }
+      
+        echo "</div>
+        </div>";
+      }
+      else {
+          echo " <small style='color: green;'>No Data Found</small>";
+      }
+
+      mysqli_close($conn);
+
+      ?>
+
+
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+
+
+      </section>
     </main>
     <footer>
       <!-- place footer here -->
@@ -286,14 +335,5 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      var myCarousel = new bootstrap.Carousel(
-        document.getElementById("carouselExampleCaptions"),
-        {
-          interval: 5000,
-        }
-      );
-    </script>
   </body>
 </html>

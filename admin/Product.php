@@ -187,7 +187,7 @@ if (!isset($_SESSION["authenticated"])) {
             while ($row = mysqli_fetch_assoc($result)) {
                     echo "<div class='col-md-3 g-3'>
 
-                        <div class='card mb-4 box-shadow'>
+                        <div class='projects-img-box card mb-4 box-shadow'>
                           <img style='height: 200px;
                           object-fit: cover;' 
                           class='card-img-top' src='projects/{$row['image']}'>
