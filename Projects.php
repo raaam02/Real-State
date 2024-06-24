@@ -257,25 +257,50 @@
         echo "<div class='container'>
         <div class='row'>
       ";
-        while ($row = mysqli_fetch_assoc($result)) {
-                echo "<div class='col-md-3 g-3'>
-
-                    <div class='projects-img-box card mb-4 box-shadow'>
-                      <img style='height: 200px;
-                      object-fit: cover;' 
-                      class='card-img-top project-imp' src='admin/projects/{$row['image']}'>
-
-                      <div class='card-body'>
-                        <h3>{$row['name']}</h3>
-                        <p class='card-text'>{$row['location']}</p>
-
+      
+                  while ($row = mysqli_fetch_assoc($result)) {
+                      $modalId = "modal" . $row['id']; // Unique modal ID
+                      $imageUrl = "admin/projects/{$row['image']}"; // Image URL
+                      echo "
+                      <div class='col-md-3 g-3'>
+                          <div class='projects-img-box card mb-4 box-shadow'>
+                              <button
+                                  type='button'
+                                  class='btn p-0 border-0'
+                                  data-bs-toggle='modal'
+                                  data-bs-target='#$modalId'
+                                  data-bs-image='$imageUrl'
+                              >
+                                  <img style='height: 200px; object-fit: cover;' 
+                                      class='card-img-top project-img' 
+                                      src='$imageUrl'>
+                              </button>
+                              <div class='card-body'>
+                                  <h3>{$row['name']}</h3>
+                                  <p class='card-text'>{$row['location']}</p>
+                              </div>
+                          </div>
                       </div>
-                    </div>
-                  </div>
                   
-                  
-          ";
-        } 
+                      <!-- Modal -->
+                      <div class='modal fade' id='$modalId' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+                          <div class='modal-dialog'>
+                              <div class='modal-content'>
+                                  <div class='modal-header'>
+                                      <h3 class='modal-title text-dark' id='exampleModalLabel'>{$row['name']}</h3>
+                                      <button type='button btn-dark' class='btn-close shadow-none' data-bs-dismiss='modal' aria-label='Close'></button>
+                                  </div>
+                                  <div class='modal-body'>
+                                      <img class='rounded' src='$imageUrl' alt='Image' style='width: 100%; height: 400px;' id='modal-img-$row[id]'>
+                                  </div>
+                                  <div class='modal-footer'>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      ";
+                  }
+      
         echo "</div>
         </div>";
       }
@@ -286,7 +311,13 @@
       mysqli_close($conn);
 
       ?>
-              
+
+
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+
+
       </section>
     </main>
     <footer>
