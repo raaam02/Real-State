@@ -50,7 +50,7 @@ if (!isset($_SESSION["authenticated"])) {
             <a class="navbar-brand p- 0 m-0 text-white" href="#"
               >
               <img
-                src="../images/AdminDP.png"
+                src="../images/userDP.png"
                 class="img-fluid rounded-5"
                 alt=""
               />
