@@ -219,7 +219,12 @@ ul {
   transition: all ease-in-out 0.3s;
 }
 
+.projects-img-box {
+  overflow: hidden;
+}
+
 .card-img-top:hover {
+  transform: scale(1.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: #f8f9fa;
 }

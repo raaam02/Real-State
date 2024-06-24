@@ -139,7 +139,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/hotel-desktop-new-e1576663207298.jpg"
+                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/Desktop-banner_2.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -152,7 +152,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/Desktop-banner_2.jpg"
+                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/1366x626.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -165,7 +165,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/1366x626.jpg"
+                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/hotel-desktop-new-e1576663207298.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -198,7 +198,7 @@
         </div>
       </section>
       <!-- Finest Development -->
-      <section class="work-intro">
+      <section class="work-intro pt-5">
         <div class="p-0 p-lg-5">
           <h1 class="p-lg-5 py-5 ms-0 text-center">
             <strong>Crafting the World's Finest Developments</strong>
@@ -216,7 +216,7 @@
                 perfectly orchestrate a celebration of life’s finest moments.
               </p>
               <div
-                class="mt-3 d-flex align-items-center justify-content-center"
+                class="mt-5 d-flex align-items-center justify-content-center"
               >
                 <a
                   name=""
@@ -231,7 +231,63 @@
           </div>
         </div>
       </section>
-      <!-- About Us -->
+
+      <!-- Projects -->
+
+       <section class="projects my-5">
+
+       <div class="col-md-6 mx-auto my-5">
+            <h1 class="display-4 fw-bold">
+              <h1 class="display-3 text-center" style="color: #00ab22">
+                Our Projects
+              </h1>
+            </h1>
+          </div>
+
+      <?php
+      include("php/conn.php");
+
+
+      $sql = "SELECT * FROM `products`";
+
+      $result = mysqli_query($conn, $sql );
+
+      if (mysqli_num_rows($result)>0) {
+        
+        echo "<div class='container'>
+        <div class='row'>
+      ";
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo "<div class='col-md-3 g-3'>
+
+                    <div class='projects-img-box card mb-4 box-shadow'>
+                      <img style='height: 200px;
+                      object-fit: cover;' 
+                      class='card-img-top project-imp' src='admin/projects/{$row['image']}'>
+
+                      <div class='card-body'>
+                        <h3>{$row['name']}</h3>
+                        <p class='card-text'>{$row['location']}</p>
+
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+          ";
+        } 
+        echo "</div>
+        </div>";
+      }
+      else {
+          echo " <small style='color: green;'>No Data Found</small>";
+      }
+
+      mysqli_close($conn);
+
+      ?>
+              
+      </section>
     </main>
     <footer>
       <!-- place footer here -->
