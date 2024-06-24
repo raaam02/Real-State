@@ -63,7 +63,7 @@ if (mysqli_num_rows($result)>0) {
             <a class="navbar-brand p- 0 m-0 text-white" href="#"
               >
               <img
-                src="../images/AdminDP.png"
+                src="../images/userDP.png"
                 class="img-fluid rounded-5"
                 alt=""
               />
@@ -145,7 +145,7 @@ if (mysqli_num_rows($result)>0) {
             class="shadow container p-5 mt-5 rounded-5"
             style="max-width: 1000px; background-color: #d0efffc7"
           >
-            <h3 class="text-center mb-5">Edit Project Detail</h3>
+            <h3 class="text-center mb-5 text-dark">Edit Project Detail</h3>
             
             <div
                 class="row justify-content-center align-items-center g-2"
@@ -155,7 +155,7 @@ if (mysqli_num_rows($result)>0) {
             <?php 
             echo "<div class='col-md-9 g-3'>
 
-            <div class='card mb-4 box-shadow'>
+            <div class='card mb-4 box-shadow projects-img-box'>
               <img style='height: 200px;
               object-fit: cover;' 
               class='card-img-top' src='projects/{$row['image']}'>
@@ -191,7 +191,7 @@ if (mysqli_num_rows($result)>0) {
                 />
               </div>
               <div class="mb-3">
-                <label for="" class="form-label">Edit Name</label>
+                <label for="" class="form-label text-dark">Edit Name</label>
                 <input
                   type="text"
                   class="form-control shadow-none"
@@ -203,7 +203,7 @@ if (mysqli_num_rows($result)>0) {
                 />
               </div>
               <div class="mb-3">
-              <label for="" class="form-label">Edit Desription</label>
+              <label for="" class="form-label text-dark">Edit Desription</label>
               <textarea
                 class="form-control shadow-none"
                 name="desc"
@@ -213,7 +213,7 @@ if (mysqli_num_rows($result)>0) {
               ><?php echo $row['location'];?></textarea>
             </div>
             <div class="mb-3">
-              <label for="" class="form-label">Choose file</label>
+              <label for="" class="form-label text-dark">Choose file</label>
               <input
                 type="file"
                 class="form-control shadow-none"
