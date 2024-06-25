@@ -38,7 +38,7 @@
       <!-- place navbar here -->
       <nav class="load-animation navbar navbar-expand-md fixed-top">
         <div class="container-fluid px-4">
-          <a class="navbar-brand text-white" href="index.html">Logo</a>
+          <a class="navbar-brand text-white" href="index.php">Logo</a>
           <button
             class="navbar-toggler shadow-none border-0"
             type="button"
@@ -74,7 +74,7 @@
                   <a
                     class="nav-link activeted"
                     aria-current="page"
-                    href="index.html"
+                    href="index.php"
                     >Home</a
                   >
                 </li>
@@ -227,7 +227,107 @@
       </section>
 
       <!-- Projects -->
-      <section id="projects"></section>
+      <section id="projects" class="my-5 pt-5">
+
+         <div class="mx-auto mb-5">
+            <h1 class="display-6 fw-bold">
+              <p class="text-center mb-0">New Comming Projects</p>
+            </h1>
+          </div>
+
+        <?php
+        include("php/conn.php");
+  
+  
+        $sql = "SELECT * FROM `products`";
+  
+        $result = mysqli_query($conn, $sql );
+  
+        if (mysqli_num_rows($result)>0) {
+          
+          echo "<div class='container mx-auto'>
+          <div class='row'>
+        ";
+                    $i = 0;
+                    while ($row = mysqli_fetch_assoc($result)) {
+
+                      $i++;
+                      if ($i < 4) {
+
+                        $modalId = "modal" . $row['id']; // Unique modal ID
+                        $imageUrl = "admin/projects/{$row['image']}"; // Image URL
+                        echo "
+                        <div class='col-md-3 g-4'>
+                            <div class='projects-img-box card mb-4 box-shadow'>
+                            <!-- Button trigger modal -->
+                                <button
+                                    type='button'
+                                    class='btn p-0 border-0'
+                                    data-bs-toggle='modal'
+                                    data-bs-target='#$modalId'
+                                    data-bs-image='$imageUrl'
+                                >
+                                    <img style='height: 200px; object-fit: cover;' 
+                                        class='card-img-top project-img' 
+                                        src='$imageUrl'>
+                                </button>
+                                <div class='card-body'>
+                                    <h3>{$row['name']}</h3>
+                                    <p class='card-text'>{$row['location']}</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Modal -->
+                        <div class='modal fade' id='$modalId' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+                            <div class='modal-dialog'>
+                                <div class='modal-content'>
+                                    <div class='modal-header'>
+                                        <h3 class='modal-title text-dark' id='exampleModalLabel'>{$row['name']}</h3>
+                                        <button type='button btn-dark' class='btn-close shadow-none' data-bs-dismiss='modal' aria-label='Close'></button>
+                                    </div>
+                                    <div class='modal-body'>
+                                        <img class='rounded' src='$imageUrl' alt='Image' style='width: 100%; height: 400px;' id='modal-img-$row[id]'>
+                                    </div>
+                                    <div class='modal-footer'>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        ";
+                    }
+
+                  }
+
+                  echo '<div class="col-md-3 g-3 d-flex align-items-center justify-content-center">
+                  
+                    <div class="mb-5">
+                          <a
+                            name=""
+                            id=""
+                            class="btn rounded-5 p-4 text-white d-flex align-items-center justify-content-center"
+                            href="Projects.php#projects"
+                            role="button"
+                            ><i class="fa-solid fa-arrow-right fa-xl fa-fade" style="color: #ffffff;"></i></a
+                          >
+                      </div>
+                  
+                  </div>';
+
+        
+          echo "</div>
+          </div>";
+        }
+        else {
+            echo " <small style='color: green;'>No Data Found</small>";
+        }
+  
+        mysqli_close($conn);
+  
+        ?>
+  
+
+      </section>
 
       <!-- About Us -->
       <section class="aboutUs">

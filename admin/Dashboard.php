@@ -114,7 +114,7 @@ if (!isset($_SESSION["authenticated"])) {
                   <a
                     class="nav-link activeted"
                     aria-current="page"
-                    href="index.html"
+                    href="index.php"
                     >Dashboard</a
                   >
                 </li>
