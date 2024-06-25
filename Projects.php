@@ -38,7 +38,7 @@
       <!-- place navbar here -->
       <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid px-4">
-          <a class="navbar-brand text-white" href="index.html">Logo</a>
+          <a class="navbar-brand text-white" href="index.php">Logo</a>
           <button
             class="navbar-toggler shadow-none border-0"
             type="button"
@@ -71,7 +71,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html"
+                  <a class="nav-link" aria-current="page" href="index.php"
                     >Home</a
                   >
                 </li>
@@ -234,7 +234,7 @@
 
       <!-- Projects -->
 
-       <section class="projects my-5">
+       <section id="projects" class="projects my-5">
 
        <div class="col-md-6 mx-auto my-5">
             <h1 class="display-4 fw-bold">
@@ -257,13 +257,14 @@
         echo "<div class='container'>
         <div class='row'>
       ";
-      
+                  
                   while ($row = mysqli_fetch_assoc($result)) {
                       $modalId = "modal" . $row['id']; // Unique modal ID
                       $imageUrl = "admin/projects/{$row['image']}"; // Image URL
                       echo "
                       <div class='col-md-3 g-3'>
                           <div class='projects-img-box card mb-4 box-shadow'>
+                          <!-- Button trigger modal -->
                               <button
                                   type='button'
                                   class='btn p-0 border-0'
@@ -311,11 +312,6 @@
       mysqli_close($conn);
 
       ?>
-
-
-      <!-- Button trigger modal -->
-
-      <!-- Modal -->
 
 
       </section>
