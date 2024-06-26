@@ -245,7 +245,7 @@
   
         if (mysqli_num_rows($result)>0) {
           
-          echo "<div class='container-fluid mx-2'>
+          echo "<div class='container-fluid'>
           <button class='scroll-button left d-flex align-items-center justify-content-center'>
               <i class='fa-solid fa-chevron-left fa-lg'></i>
           </button>
