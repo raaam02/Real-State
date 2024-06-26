@@ -82,10 +82,10 @@
                   <a class="nav-link" href="projects.php">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Contact.html">Contact</a>
+                  <a class="nav-link" href="Contact.php">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Aboutus.html">About</a>
+                  <a class="nav-link" href="Aboutus.php">About</a>
                 </li>
               </ul>
               <div class="d-flex align-items-center justify-content-center">
@@ -128,7 +128,7 @@
               name=""
               id=""
               class="btn rounded-5 mt-4 text-white px-5 d-flex align-items-center justify-content-center"
-              href="Aboutus.html"
+              href="Aboutus.php"
               role="button"
               >KNOW MORE</a
             >
