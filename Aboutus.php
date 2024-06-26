@@ -79,10 +79,10 @@
                   <a class="nav-link" href="projects.php">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Contact.html">Contact</a>
+                  <a class="nav-link" href="Contact.php">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link activeted" href="Aboutus.html">About</a>
+                  <a class="nav-link activeted" href="Aboutus.php">About</a>
                 </li>
               </ul>
               <div class="d-flex align-items-center justify-content-center">
@@ -151,7 +151,7 @@
         </div>
       </section>
       <!--  -->
-      <section class="p-lg-5" style="background-color: #066319">
+      <section class="p-lg-5" style="background-color: #074f28ac">
         <div class="container">
           <div class="row featurette">
             <div
@@ -208,6 +208,9 @@
     </main>
     <footer>
       <!-- place footer here -->
+      <?php
+          include "footer.php";
+       ?>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script

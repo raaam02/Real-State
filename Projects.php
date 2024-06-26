@@ -81,10 +81,10 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Contact.html">Contact</a>
+                  <a class="nav-link" href="Contact.php">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Aboutus.html">About</a>
+                  <a class="nav-link" href="Aboutus.php">About</a>
                 </li>
               </ul>
               <div class="d-flex align-items-center justify-content-center">
@@ -318,6 +318,9 @@
     </main>
     <footer>
       <!-- place footer here -->
+      <?php
+          include "footer.php";
+       ?>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
