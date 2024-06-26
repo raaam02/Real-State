@@ -301,3 +301,16 @@ ul {
 .scroll-button:focus {
   outline: none;
 }
+
+#newsletter1 {
+  color: white;
+  border-bottom: 1px solid white;
+}
+#newsletter1::placeholder {
+  color: rgb(189, 189, 189);
+}
+
+.subscribe-btn {
+  transition: all ease-in-out 0.3s;
+  color: #fff;
+}

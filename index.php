@@ -229,7 +229,7 @@
       <!-- Projects -->
       <section id="projects" class="my-5 pt-5">
 
-         <div class="mx-auto mb-5">
+         <div class="mx-auto m-5 pb-4">
             <h1 class="display-6 fw-bold">
               <p class="text-center mb-0">New Comming Projects</p>
             </h1>
@@ -338,9 +338,9 @@
       </section>
 
       <!-- About Us -->
-      <section class="aboutUs">
+      <section class="aboutUs mb-5">
         <div
-          class="position-relative overflow-hidden py-3 p-lg-5 pt-lg-3 pt-3 p-md-5 m-md-3"
+          class="position-relative overflow-hidden mb-5 py-3 p-lg-5 pt-lg-3 pt-3 p-md-5 m-md-3"
         >
           <div class="col-md-6 mx-auto my-5 mb-0 pb-2">
             <h1 class="display-4 fw-bold">
@@ -353,8 +353,8 @@
               Crafting the World's Finest Developments
             </h3>
           </div>
-          <div class="d-flex p-1 px-lg-5 mx-lg-5 mx-auto text-center">
-            <div class="px-lg-5">
+          <div class="d-flex align-items-center justify-content-center p-1 px-lg-5 mx-lg-5 mx-auto text-center">
+            <div class="px-lg-5 mt-3" style="max-width:800px">
               <p class="h5">
                 With a rich legacy of trust spanning four decades, at
                 <strong>Vindhya Developers</strong>, we are driven by our
@@ -376,6 +376,9 @@
     </main>
     <footer>
       <!-- place footer here -->
+       <?php
+          include "footer.php";
+       ?>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
