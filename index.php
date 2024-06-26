@@ -139,7 +139,7 @@
       <section id="Carousel">
         <div
           id="carouselExampleCaptions"
-          class="carousel slide"
+          class="carousel slide load-animation"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators">
@@ -227,7 +227,7 @@
       </section>
 
       <!-- Projects -->
-      <section id="projects" class="my-5 pt-5">
+      <section id="projects" class="load-animation my-5 pt-5">
 
          <div class="mx-auto m-5 pb-4">
             <h1 class="display-6 fw-bold">
@@ -253,7 +253,7 @@
               <i class='fa-solid fa-chevron-left fa-flip-horizontal fa-lg'></i>
           </button>
           <div class='horizontal-scroll'>
-          <div class='row flex-nowrap'>
+          <div class='row flex-nowrap ms-lg-5'>
         ";
                     $i = 0;
                     while ($row = mysqli_fetch_assoc($result)) {
@@ -338,7 +338,7 @@
       </section>
 
       <!-- About Us -->
-      <section class="aboutUs mb-5">
+      <section class="load-animation aboutUs mb-5">
         <div
           class="position-relative overflow-hidden mb-5 py-3 p-lg-5 pt-lg-3 pt-3 p-md-5 m-md-3"
         >
@@ -374,7 +374,7 @@
       </section>
       <!-- Prjects -->
     </main>
-    <footer>
+    <footer class="load-animation">
       <!-- place footer here -->
        <?php
           include "footer.php";
