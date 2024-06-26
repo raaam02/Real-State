@@ -86,27 +86,42 @@
     </div>
 
     <div class="d-flex justify-content-between py-4 my-4 border-top">
-      <p>© 2024 Company, Inc. All rights reserved.</p>
-      <ul class="list-unstyled d-flex">
-        <li class="ms-3">
-          <a class="link-dark" href="#"
-            ><svg class="bi" width="24" height="24">
-              <use xlink:href="#twitter"></use></svg
-          ></a>
-        </li>
-        <li class="ms-3">
-          <a class="link-dark" href="#"
-            ><svg class="bi" width="24" height="24">
-              <use xlink:href="#instagram"></use></svg
-          ></a>
-        </li>
-        <li class="ms-3">
-          <a class="link-dark" href="#"
-            ><svg class="bi" width="24" height="24">
-              <use xlink:href="#facebook"></use></svg
-          ></a>
-        </li>
-      </ul>
+      <p>© 2024 Developed by
+          <a target="_blank" href="https://twitter.com/raaam_02">Ram</a>
+          &copy; 2024
+      </p>
+      <div class="mt-3">
+              <a href=""
+                ><i
+                  class="fa-brands fa-facebook fa-xl me-2"
+                  style="color: #008ddf"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-brands fa-instagram fa-xl me-2"
+                  style="color: #ff00b7"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-brands fa-pinterest fa-xl me-2"
+                  style="color: #c90000"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-brands fa-youtube fa-xl me-2"
+                  style="color: #f20000"
+                ></i
+              ></a>
+              <a href="https://twitter.com/raaam_02"
+                ><i
+                  class="fa-brands fa-twitter fa-xl"
+                  style="color: #0096db"
+                ></i
+              ></a>
+            </div>
     </div>
   </footer>
 </div>
