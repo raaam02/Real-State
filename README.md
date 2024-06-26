@@ -2,7 +2,7 @@
 
 ## Live Website
 
-[Reate-State Live](http://raaam.000.pe/)
+[Real-State Live](http://raaam.000.pe/)
 
 1. **Clone the repository:**
 
