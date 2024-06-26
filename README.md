@@ -1,6 +1,13 @@
-```bash
-[http.raaam.000.pe]
 # Real Estate Website
+
+## Live Website
+
+[Reate-State Live](http://raaam.000.pe/)
+
+1. **Clone the repository:**
+
+   ```bash
+   http://raaam.000.pe/
 
 ## Description
 
