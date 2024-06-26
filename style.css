@@ -37,7 +37,7 @@
   height: 0px;
   width: 40%;
   border-radius: 50%;
-  box-shadow: 30px 44px 100px 50px #518d5d5c;
+  box-shadow: 30px 44px 100px 50px #5ba96b9d;
   /* animation: 5s glow infinite ease-in-out; */
 }
 
@@ -49,7 +49,7 @@
   width: 25px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: 1px 70px 50px 2px var(--green-bright);
+  box-shadow: 1px 70px 50px 2px #11ff00;
   animation: 15s glow-flow infinite ease-in-out;
 }
 
@@ -236,4 +236,68 @@ ul {
 
 .add-btn:hover {
   background-color: #2f2fa5;
+}
+
+.horizontal-scroll {
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+/* For WebKit browsers (Chrome, Safari, etc.) */
+.horizontal-scroll::-webkit-scrollbar {
+  scrollbar-width: 0px;
+}
+
+/* For Firefox */
+.horizontal-scroll {
+  scrollbar-width: none;
+}
+
+/* For Internet Explorer and Edge */
+.horizontal-scroll {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.horizontal-scroll {
+  scrollbar-width: none;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.horizontal-scroll .row {
+  flex-wrap: nowrap;
+}
+
+.container-fluid {
+  position: relative;
+}
+
+.scroll-button {
+  height: 45px;
+  width: 45 px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #00881b6a;
+  border-radius: 50%;
+  color: rgb(190, 190, 190);
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 100;
+  font-size: 18px; /* Increase the font size for better visibility */
+  transition: all ease-in-out 0.2s;
+}
+.scroll-button:hover {
+  color: white;
+  background-color: #00881bac;
+}
+.scroll-button.left {
+  left: 10px; /* Adjust to ensure the button is within view */
+}
+.scroll-button.right {
+  right: 15px; /* Adjust to ensure the button is within view */
+}
+.scroll-button:focus {
+  outline: none;
 }

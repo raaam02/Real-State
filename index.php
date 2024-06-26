@@ -245,19 +245,26 @@
   
         if (mysqli_num_rows($result)>0) {
           
-          echo "<div class='container mx-auto'>
-          <div class='row'>
+          echo "<div class='container-fluid mx-2'>
+          <button class='scroll-button left d-flex align-items-center justify-content-center'>
+              <i class='fa-solid fa-chevron-left fa-lg'></i>
+          </button>
+          <button class='scroll-button right d-flex align-items-center justify-content-center'>
+              <i class='fa-solid fa-chevron-left fa-flip-horizontal fa-lg'></i>
+          </button>
+          <div class='horizontal-scroll'>
+          <div class='row flex-nowrap'>
         ";
                     $i = 0;
                     while ($row = mysqli_fetch_assoc($result)) {
 
                       $i++;
-                      if ($i < 4) {
+                      if ($i <= 8) {
 
                         $modalId = "modal" . $row['id']; // Unique modal ID
                         $imageUrl = "admin/projects/{$row['image']}"; // Image URL
                         echo "
-                        <div class='col-md-3 g-4'>
+                        <div style='max-width:300px' class='ms-2 g-3'>
                             <div class='projects-img-box card mb-4 box-shadow'>
                             <!-- Button trigger modal -->
                                 <button
@@ -299,7 +306,7 @@
 
                   }
 
-                  echo '<div class="col-md-3 g-3 d-flex align-items-center justify-content-center">
+                  echo '<div style="max-width:180px" class="d-flex align-items-center justify-content-center">
                   
                     <div class="mb-5">
                           <a
@@ -316,6 +323,7 @@
 
         
           echo "</div>
+          </div>
           </div>";
         }
         else {
@@ -390,5 +398,6 @@
         }
       );
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
