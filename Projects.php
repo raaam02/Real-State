@@ -76,7 +76,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link activeted" href="Projects.html"
+                  <a class="nav-link activeted" href="Projects.php"
                     >Projects</a
                   >
                 </li>
