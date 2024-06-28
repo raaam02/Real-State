@@ -1,8 +1,6 @@
 # Real Estate Website
 
-## Live Website
-
-## [Real-State Live](https://raaam.000.pe/)
+## Live Website: [Real-State Click here](https://raaam.000.pe/)
 
 1. **Clone the repository:**
 
