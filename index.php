@@ -49,7 +49,7 @@
             <i class="fa-solid fa-bars" style="color: #e3e3e3"></i>
           </button>
           <div
-            class="sidebar offcanvas offcanvas-start"
+            class="sidebar offcanvas offcanvas-start w-75"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
