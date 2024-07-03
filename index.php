@@ -164,7 +164,7 @@
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner">
+          <div class="carousel-inner" style="max-height:690px">
             <div class="carousel-item active">
               <img
                 src="images/slide1.jpg"
