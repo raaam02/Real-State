@@ -49,7 +49,7 @@
             <i class="fa-solid fa-bars" style="color: #e3e3e3"></i>
           </button>
           <div
-            class="sidebar offcanvas offcanvas-start"
+            class="sidebar offcanvas offcanvas-start w-75"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
@@ -164,7 +164,7 @@
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner">
+          <div class="carousel-inner" style="max-height:690px">
             <div class="carousel-item active">
               <img
                 src="images/slide1.jpg"

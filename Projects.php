@@ -136,10 +136,10 @@
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner">
+          <div class="carousel-inner" style="max-height:690px">
             <div class="carousel-item active">
               <img
-                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/Desktop-banner_2.jpg"
+                src="images/slide1.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -152,7 +152,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/1366x626.jpg"
+                src="images/slide2.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -165,7 +165,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.krahejacorp.com/wp-content/uploads/2022/11/hotel-desktop-new-e1576663207298.jpg"
+                src="images/slide3.jpg"
                 class="d-block w-100"
                 alt="..."
               />
